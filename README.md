@@ -24,7 +24,7 @@ This project has been made:
    - **PHP**. This code handles requests from our web application through two PHP files. One of them, database.php, contains a class that connects to the database and has a method to execute queries. The other file, receiver.php, receives requests from our web application and creates a database object to perform a query.
       
   ## Front-End:
-  - **Bootstrap**. To make sure that my website has an attractive appearance and is compatible with mobile devices, I used the Bootstrap framework.
+  - **Bootstrap**. To make sure that my website has an attractive appearance and is compatible with mobile devices, I used the Bootstrap framework. This is the [template](https://startbootstrap.com/previews/bare) that I have used.
       
       
   - **Jquery**. To access the elements (divs) in my HTML file dynamically and make changes to them without having to reload the page, I used the jQuery JavaScript library.
