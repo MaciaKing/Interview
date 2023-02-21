@@ -45,6 +45,7 @@ Searching A-Bomb hero:
 
 <img width="1510" alt="Captura de pantalla 2023-02-21 a las 15 54 27" src="https://user-images.githubusercontent.com/51322831/220379083-f8f0eb1c-b922-4cfb-bd1b-de6f307e0c34.png">
 
+Sorted by "ID":
 
 <img width="1510" alt="Captura de pantalla 2023-02-21 a las 15 06 24" src="https://user-images.githubusercontent.com/51322831/220375094-fa42e17a-d78a-4ea4-93c0-773eb5b9cf75.png">
 
