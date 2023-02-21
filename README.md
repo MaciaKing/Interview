@@ -43,6 +43,7 @@ The second file, marvel_api.py, is responsible for obtaining the Marvel characte
  
 <img width="1506" alt="Captura de pantalla 2023-02-21 a las 15 07 39" src="https://user-images.githubusercontent.com/51322831/220375024-4278c6a3-0ee7-4b37-a88e-5d85eb9f8430.png">
 
+Searching A- hero
 
 <img width="1511" alt="Captura de pantalla 2023-02-21 a las 15 06 45" src="https://user-images.githubusercontent.com/51322831/220375062-f05e27c7-d55e-40b3-a0f3-a241c6dc42e5.png">
 
