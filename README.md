@@ -14,7 +14,8 @@ This project has been made:
 
   ## Backend:
   - **Python**. This code uses two Python files to connect to the Marvel API and store the information obtained in a database. The first file, database.py, is a class that connects to the database and provides methods to insert data and optimize performance.
-  The second file, marvel_api.py, is responsible for obtaining the Marvel character information through the Marvel API and storing it in the database using the methods provided by the database.py class. This file initializes the process of extracting data from Marvel heroes and stores it in the database for later use.
+  
+    The second file, marvel_api.py, is responsible for obtaining the Marvel character information through the Marvel API and storing it in the database using the methods provided by the database.py class. This file initializes the process of extracting data from Marvel heroes and stores it in the database for later use.
       
    - **Postgres**. The database will contain a single table called "hero", which will store information about Marvel characters. The table will have several fields, including "name" for the character's name, "photo" to store an image of the character, "description" to describe the character's abilities or characteristics, "comic book appearances" for the number of comic books in which the character has appeared, and "series appearances" for the number of television series in which the character has appeared. Also, each character will have a unique identifier. To view the creation file click here.
       
