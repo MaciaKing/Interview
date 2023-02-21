@@ -11,7 +11,10 @@ CREATE TABLE hero (
     thumbnail VARCHAR(500)
 );
 
--- Donam permisos a l'usuari
+-- Create user
+CREATE USER macia WITH PASSWORD 'macia';
+
+-- Set privileges
 GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO macia; 
 GRANT ALL PRIVILEGES ON DATABASE marvel TO macia;
 GRANT ALL PRIVILEGES ON TABLE hero TO macia;

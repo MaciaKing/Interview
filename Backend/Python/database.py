@@ -28,7 +28,6 @@ class Database():
         '''
         cur = self.connection.cursor()
         for insert in inserts:
-            #print("insert --> ", insert)
             cur.execute(insert)
 
         cur = self.connection.cursor()
@@ -61,8 +60,6 @@ class Database():
         for i in all_inserts:
             #aux=i.upper().split("VALUES (")
             aux=i.split("VALUES (")
-            #Escape the values '
-            #aux[1]=aux[1].replace("'", "''")
             if first_value:
                 final_insert+=aux[0]+" VALUES (" #This is INSERT INTO <table> values
                 final_insert+=aux[1]

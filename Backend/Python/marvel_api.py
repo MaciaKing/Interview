@@ -18,28 +18,23 @@ if __name__ == '__main__':
     public_key = "b6d14e00e9a9f68e94900531a34ae1df"
     private_key = "6bfba275a878af3f173b91a0f255c07950e6ba95"
 
-    # Generar un hash MD5 usando las claves pública y privada
-    #md5_hash = hashlib.md5()
-    #hash_value = hashlib.md5((timestamp + private_key + public_key).encode('utf-8')).hexdigest()
-    #hash_value = md5_hash.hexdigest()
-    # 16bfba275a878af3f173b91a0f255c07950e6ba95b6d14e00e9a9f68e94900531a34ae1df
+    # Generate hash
     hash = "b6f3d6c96a1e61cafed3dcb9b158bfc7"
 
-    # URL para solicitar una lista de personajes de Marvel
+    # send request to marvel api 
     url = 'http://gateway.marvel.com/v1/public/characters?ts={}&apikey={}&hash={}'.format(  ts, public_key, hash)
 
-    # Realizar la solicitud HTTP
+    # Get response
     response = requests.get(url)
     if response.status_code != 200:
         print("Error en la solicitud")
         exit()
 
-    # Obtener los datos de la respuesta en formato JSON
+    # Convert response to json
     data = json.loads(response.text)
+    all_inserts = [] # all inserts to make in database
 
-    all_inserts = []
-
-    # Imprimir la lista de personajes
+    # Get all heroes and insert in database
     for i in data['data']['results']:
         name = escape_values(i['name'])
         description = escape_values(i['description'])
@@ -50,8 +45,7 @@ if __name__ == '__main__':
         all_inserts.append("INSERT INTO hero (name, n_comics, n_series, thumbnail) VALUES ('{}', {}, {}, '{}')".format(
             name,  comics, series, thumbnail))
 
-# print(all_inserts)
-db = database.Database("macia", "maica", "localhost", "marvel")
-final_insert = db.join_all_inserts(all_inserts)
-print(final_insert)
-db.make_insert_database([final_insert+";"])
+    db = database.Database("macia", "maica", "localhost", "marvel")
+    final_insert = db.join_all_inserts(all_inserts) # Join all inserts to make only one insert
+    #print(final_insert)
+    db.make_insert_database([final_insert+";"])

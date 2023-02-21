@@ -1,18 +1,22 @@
 // https://startbootstrap.com/previews/bare
 
-/*!
-* Start Bootstrap - Bare v5.0.7 (https://startbootstrap.com/template/bare)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-bare/blob/master/LICENSE)
-*/
-// This file is intentionally blank
-// Use this file to add JavaScript to your project
 
-
+/**
+ * This function is called when the page is loaded.
+ * It sends a request to the server to get all the heroes.
+ * */
 window.addEventListener('DOMContentLoaded', event => {
     getAllHeros();
 });
 
+
+/**
+ * This function is called when the data is received from the server
+ * It creates a table with the data received from the server
+ * The table is created using the DataTables library.
+ * 
+ * @param {*} data  data received from the server in the form of a JSON string
+ */
 function showAllHeros(data) {
     const json = JSON.parse(data);
     const contentDiv = document.getElementById('content');
@@ -35,6 +39,14 @@ function showAllHeros(data) {
     });
 }
 
+/**
+ * This function is called when the page is loaded.
+ * It sends a request to the server to get all the heroes.
+ * The server responds with a JSON string containing all the heroes.
+ * The function showAllHeros() is called to create a table with the data received from the server.
+ * 
+ * @param {*} data  data received from the server in the form of a JSON string.
+ * */
 function getAllHeros() {
     jQuery.ajax({
         type: 'POST',
