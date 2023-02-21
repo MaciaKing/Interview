@@ -1,14 +1,14 @@
 # Interview
 
 API: Marvel (https://developer.marvel.com/)
-Hecha hasta el nivel 4
+Level reached: Level 3
 
 
-Versiones de lenguages:
+Languages used:
 - Python 3.9.12
 - PHP 8.2.3
 
-
+This project has been developed locally using apache.
 This project has been made:
 
   ## Backend:
@@ -38,18 +38,17 @@ The second file, marvel_api.py, is responsible for obtaining the Marvel characte
  This is how it looks: 
  
  
- 
- 
 <img width="1506" alt="Captura de pantalla 2023-02-21 a las 15 07 39" src="https://user-images.githubusercontent.com/51322831/220375024-4278c6a3-0ee7-4b37-a88e-5d85eb9f8430.png">
 
-Searching A- hero
+Searching A-Bomb hero:
 
-<img width="1511" alt="Captura de pantalla 2023-02-21 a las 15 06 45" src="https://user-images.githubusercontent.com/51322831/220375062-f05e27c7-d55e-40b3-a0f3-a241c6dc42e5.png">
+<img width="1510" alt="Captura de pantalla 2023-02-21 a las 15 54 27" src="https://user-images.githubusercontent.com/51322831/220379083-f8f0eb1c-b922-4cfb-bd1b-de6f307e0c34.png">
 
 
 <img width="1510" alt="Captura de pantalla 2023-02-21 a las 15 06 24" src="https://user-images.githubusercontent.com/51322831/220375094-fa42e17a-d78a-4ea4-93c0-773eb5b9cf75.png">
 
 
 Changing the entries of the datatable:
+
  <img width="1498" alt="Captura de pantalla 2023-02-21 a las 15 07 50" src="https://user-images.githubusercontent.com/51322831/220374971-e6d9b14f-b4f8-4443-ae31-023515f98254.png">
 
